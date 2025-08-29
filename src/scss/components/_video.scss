@@ -1,0 +1,15 @@
+@use '../presets' as *;
+@use '../mixins' as *;
+
+.video {
+  padding-bottom: 100px;
+  background-color: $color-light;
+  margin-top: calc($gap-lg * -1);
+  &__iframe {
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+    border: 0;
+  }
+}

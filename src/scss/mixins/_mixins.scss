@@ -1,0 +1,26 @@
+@use '../presets' as *;
+@use '../mixins' as *;
+
+@mixin section {
+      text-align: center;
+
+      @include md-min {
+        padding-top: 110px;
+        padding-bottom: 90px;
+      }
+
+      @include md {
+        padding-top: 60px;
+        padding-bottom: 50px;
+      }
+
+      &__title {
+        font-weight: $font-weight-medium;
+        line-height: $line-height-sm;
+        margin-bottom: 40px;
+        }
+  
+        &__description {
+          color: $color-secondary;
+        }
+      }

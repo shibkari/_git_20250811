@@ -1,0 +1,18 @@
+@use '../presets' as *;
+@use '../mixins' as *;
+
+.header {
+  padding-top: 67px;
+  padding-bottom: 141px;
+  background-color: $color-light;
+
+  @include md-min {
+    padding-top: 67px;
+    padding-bottom: 141px;
+  }
+
+  @include md {
+    padding-bottom: 60px;
+    padding-top: 40px;
+  }
+}

@@ -1,0 +1,43 @@
+@use '../presets' as *;
+@use '../mixins' as *;
+
+.experience {
+  background-color: $color-primary;
+  color: $color-white;
+  padding-top: 100px;
+  padding-bottom: 100px;
+
+  &__container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: $gap-lg;
+    justify-content: space-between;
+
+    @include md-min {
+    justify-content: space-between;
+    }
+    @include md { 
+      justify-content: space-evenly;
+    }
+  }
+  &__item {
+    display: flex;
+    gap: $gap;
+    &-description {
+      line-height: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    &-value {
+      font-size: 1.3125rem;
+      font-weight: $font-weight-medium;
+    }
+    &-picture {
+      order: -1;
+    }
+    &-image {
+      display: block;
+    }
+  }
+}
